@@ -1,0 +1,22 @@
+.header {
+  background-color: #101010;
+}
+
+.header > .container {
+  height: 950px;
+}
+
+.header > .container > .row h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.header > .container > .row h3 {
+  color: #f9004d;
+  font-weight: 600;
+}
+
+.header > .container > .row > div p {
+  text-align: justify;
+  color: #c6c9d8d3;
+}

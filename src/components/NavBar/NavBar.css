@@ -1,0 +1,12 @@
+.navbar-brand,
+.nav-link {
+  color: white !important;
+}
+
+.navbar.sticky {
+  background: #191919;
+}
+
+.navbar.fixed-top {
+  transition: 0.3s;
+}

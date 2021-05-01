@@ -1,0 +1,68 @@
+.projects {
+  background: #101010;
+}
+
+.projects .container {
+  padding: 5rem 0;
+}
+
+.projects .container .title span {
+  color: #f9004d;
+}
+
+.projects .container .title {
+  position: relative;
+}
+
+.projects .container .title:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  top: 40px;
+  width: 8rem;
+  height: 3px;
+  background: #f9004d;
+  border-radius: 20px;
+  left: 41.2%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.projects .container .card {
+  background: #191919;
+}
+
+.projects .container .card .pj-img {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  padding: 8px;
+}
+
+.projects .container .card .pj-img:hover .card-img-top {
+  transform: translateY(-80%);
+}
+
+.projects .container .card .card-img-top {
+  transition: transform 3s ease-in-out;
+}
+
+.projects .container .card p {
+  font-size: 0.8rem;
+  /* text-align: justify; */
+}
+
+.projects .container .card .technology {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects .container .card .technology span {
+  background: #282828;
+  margin-right: 5px;
+  margin-top: 5px;
+  border-radius: 3px;
+  padding: 3px 10px;
+  font-size: 13px;
+  height: 26px;
+}

@@ -1,0 +1,81 @@
+.about {
+  background: #191919;
+}
+
+.about .container {
+  padding: 6rem 0;
+}
+
+.about .container .col-md-5 {
+  padding-right: 2rem;
+}
+
+.about .container .row h1 {
+  font-weight: 600;
+}
+
+.about .container .row p {
+  color: #c6c9d8d3;
+  text-align: justify;
+}
+
+.about .container .row p:nth-last-child(2) {
+  position: relative;
+}
+
+.about .container .row p:nth-last-child(2):before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  top: 25px;
+  width: 29.5rem;
+  height: 1px;
+  background: #c6c9d8d3;
+  border-radius: 20px;
+  left: 36.3%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.about .skills h5 {
+  color: #f9004d;
+  font-size: 1.2rem;
+}
+
+.about .skills ul {
+  list-style: none;
+  font-size: 0.9rem;
+  color: #c6c9d8d3;
+}
+
+.about .skills ul li {
+  padding: 0 0.3rem;
+}
+
+.about .skills ul li svg {
+  color: #f9004d;
+}
+
+.about .social-links {
+  margin-top: 2rem;
+}
+
+.about .social-links a {
+  height: 35px;
+  width: 35px;
+  border: 1px solid #c6c9d8d3;
+  display: inline-block;
+  text-align: center;
+  line-height: 35px;
+  color: #c6c9d8d3;
+  margin: 0 4px;
+  border-radius: 10px;
+  transition: all 0.4s;
+}
+
+.about .social-links a:hover {
+  background: #f9004d;
+  border: none;
+  color: white;
+  transform: translateY(-0.25em);
+}
