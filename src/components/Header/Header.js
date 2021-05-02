@@ -5,6 +5,7 @@ import { Button, Col, Container, Image, Row } from 'react-bootstrap';
 import Typewriter from 'typewriter-effect';
 import Particle from '../Particle/Particle';
 import './Header.css';
+import headerImg from './Developer.svg';
 
 const Header = () => {
     return (
@@ -39,7 +40,7 @@ const Header = () => {
                         </div>
                     </Col>
                     <Col md={5} xs={12}>
-                        <Image src="https://i.ibb.co/Fb5zbDR/me.png" fluid />
+                        <Image src={headerImg || "https://i.ibb.co/Fb5zbDR/me.png"} fluid />
                     </Col>
                 </Row>
             </Container>
