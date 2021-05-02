@@ -14,3 +14,35 @@
 .navbar.fixed-top {
   transition: 0.3s;
 }
+
+.navbar .navbar-nav .nav-link {
+  position: relative;
+}
+
+.navbar .navbar-nav .nav-link::before {
+  position: absolute;
+  content: "";
+  background: #f9004d;
+  width: 2.8rem;
+  height: 0.2rem;
+  bottom: 8px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  opacity: 0;
+  transform: scaleX(0);
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.navbar .navbar-nav .nav-link.active::before {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.navbar .navbar-nav .nav-link:hover::before {
+  opacity: 1;
+  transform: scaleX(1);
+}

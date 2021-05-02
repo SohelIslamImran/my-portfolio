@@ -57,8 +57,10 @@ const Contact = () => {
                 </Row>
                 <Row className="align-items-center">
                     <Col md={6} className="order-2 order-md-1">
-                        <p>I'd Love to hear from you. Whether you have a question or just want to say Hi, feel free to drop a message. I'll try my best to get back to you!
-                        </p>
+                        <div className="text">
+                            <p>I'd Love to hear from you. Whether you have a question or just want to say Hi, feel free to drop a message. I'll try my best to get back to you!
+                            </p>
+                        </div>
                         <Form onSubmit={handleSubmit(onSubmit)}>
                             <Form.Group>
                                 <Form.Control
@@ -79,7 +81,7 @@ const Contact = () => {
                                     {...register("message", { required: true })}
                                     placeholder="Your Message" />
                             </Form.Group>
-                            <Button variant="danger" type="submit" size="lg">
+                            <Button variant="danger" type="submit" size="lg" block>
                                 Send Message
                             </Button>
                         </Form>

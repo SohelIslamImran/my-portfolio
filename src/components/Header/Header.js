@@ -39,7 +39,7 @@ const Header = () => {
                         </div>
                     </Col>
                     <Col md={5} xs={12}>
-                        <Image src="https://i.ibb.co/gZSpVMC/bewakoof-com-official-205182.jpg" fluid />
+                        <Image src="https://i.ibb.co/Fb5zbDR/me.png" fluid />
                     </Col>
                 </Row>
             </Container>

@@ -6,41 +6,62 @@
   padding: 2rem 0;
 }
 
+.contact-form .container > h2 {
+  position: relative;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+}
+
+.contact-form .container > h2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  top: 45px;
+  width: 7rem;
+  height: 3px;
+  background: #f9004d;
+  border-radius: 20px;
+  left: 50.1%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
 .contact-form .container > .row {
   margin-top: 2rem;
 }
 
 .contact-form .container > .row svg {
+  color: #f9004d;
   font-size: 2.8rem;
   margin-bottom: 0.5rem;
 }
 
 .contact-form .container > .row h6 {
+  color: #e4e4e4e8;
   font-size: 1.4rem;
 }
 
 .contact-form .container > .row a {
-  color: white;
-  font-size: .9rem;
+  color: #c6c9d8;
+  font-size: 0.9rem;
 }
 
 .contact-form .container > .row a:hover {
   color: #f9004d;
 }
 
-
-.contact-form .container > h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 3rem;
-}
-
 .contact-form .container .row:last-child {
- margin-top: 2rem;
+  margin-top: 2rem;
 }
 
-.contact-form .container .row:last-child p {
-  margin-top: -20px;
+.contact-form .container .row:last-child .text {
+  margin-top: -45px;
+}
+
+.contact-form .container .row:last-child .text > p {
+  color: #c6c9d8d0;
+  margin-bottom: 2rem;
 }
 
 .contact-form input,

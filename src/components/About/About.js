@@ -11,7 +11,7 @@ const About = () => {
             <Container className="d-flex align-items-center">
                 <Row>
                     <Col md={5} xs={12} className="d-flex align-items-center">
-                        <Image src="https://i.ibb.co/gZSpVMC/bewakoof-com-official-205182.jpg" fluid />
+                        <Image src="https://i.ibb.co/Fb5zbDR/me.png" fluid />
                     </Col>
                     <Col md={7} xs={12} className="d-flex align-items-center">
                         <div>

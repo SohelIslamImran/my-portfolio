@@ -1,5 +1,7 @@
+import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
-import { Image, Nav, Navbar } from 'react-bootstrap';
+import { Button, Image, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './NavBar.css';
 
@@ -49,7 +51,11 @@ const NavBar = () => {
                     <Nav.Link as={Link} to="/projects" className="mr-md-5">Projects</Nav.Link>
                     <Nav.Link as={Link} to="/blog" className="mr-md-5">Blog</Nav.Link>
                     <Nav.Link as={Link} to="/contact" className="mr-md-5">Contact</Nav.Link>
-                    <Nav.Link className="mr-md-5">Resume</Nav.Link>
+                    <Nav.Link className="mr-md-5" href="https://drive.google.com/u/0/uc?id=194Bn_iu-ngZgnbHeTz7yHZy9BvmCLh3A&export=download">
+                        <Button variant="outline-danger" size="sm">
+                            <FontAwesomeIcon icon={faFileDownload} className="mr-1" /> Resume
+                        </Button>
+                    </Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
