@@ -2,8 +2,45 @@
   background: #191919;
 }
 
-.contact-form .col-md-6:last-child {
-  padding-left: 3rem;
+.contact-form .container {
+  padding: 2rem 0;
+}
+
+.contact-form .container > .row {
+  margin-top: 2rem;
+}
+
+.contact-form .container > .row svg {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form .container > .row h6 {
+  font-size: 1.4rem;
+}
+
+.contact-form .container > .row a {
+  color: white;
+  font-size: .9rem;
+}
+
+.contact-form .container > .row a:hover {
+  color: #f9004d;
+}
+
+
+.contact-form .container > h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.contact-form .container .row:last-child {
+ margin-top: 2rem;
+}
+
+.contact-form .container .row:last-child p {
+  margin-top: -20px;
 }
 
 .contact-form input,
@@ -40,28 +77,4 @@ input:-webkit-autofill:active {
 
 .contact-form textarea {
   height: 140px;
-}
-
-.section-title {
-  margin-top: -20px;
-}
-
-.section-title h2 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  margin-bottom: 8px;
-}
-
-.section-title p {
-  font-size: 18px;
-  line-height: 30px;
-}
-
-.section-title p a {
-  color: white;
-  font-weight: 500;
-}
-
-.section-title p a:hover {
-  color: #f9004d;
 }

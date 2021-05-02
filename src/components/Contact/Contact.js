@@ -1,3 +1,5 @@
+import { faEnvelope, faMapMarkerAlt, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import emailjs from 'emailjs-com';
 import React from 'react';
 import { Button, Col, Container, Form, Image, Row } from 'react-bootstrap';
@@ -25,13 +27,38 @@ const Contact = () => {
     return (
         <section className="contact-form py-5">
             <Container>
-                <Row className="align-items-start">
+                <h2 className="text-center">Get In Touch</h2>
+                <Row>
+                    <Col className="text-center">
+                        <FontAwesomeIcon icon={faPhoneAlt} />
+                        <h6>Call Me</h6>
+                        <a href="tel:+8801910820976">+8801910820976</a>
+                    </Col>
+                    <Col className="text-center">
+                        <FontAwesomeIcon icon={faMapMarkerAlt} />
+                        <h6>Location</h6>
+                        <a
+                            href="https://goo.gl/maps/QkBTHYCkunFxyoRf9"
+                            target="_blank"
+                            rel="noreferrer">
+                            South Manda, Dhaka - 1214
+                        </a>
+                    </Col>
+                    <Col className="text-center">
+                        <FontAwesomeIcon icon={faEnvelope} />
+                        <h6>Email</h6>
+                        <a
+                            href="https://mail.google.com/mail/?view=cm&fs=1&to=sohelislamimran@gmail.com"
+                            target="_blank"
+                            rel="noreferrer">
+                            sohelislamimran@gmail.com
+                        </a>
+                    </Col>
+                </Row>
+                <Row className="align-items-center">
                     <Col md={6} className="order-2 order-md-1">
-                        <div className="section-title">
-                            <h2>Hire Me.</h2>
-                            <p>I am available for freelance work. Connect with me via phone: <a href="tel:+8801910820976">01910820976</a> or email:
-                            <a href="mailto:admin@example.com"> admin@example.com</a> </p>
-                        </div>
+                        <p>I'd Love to hear from you. Whether you have a question or just want to say Hi, feel free to drop a message. I'll try my best to get back to you!
+                        </p>
                         <Form onSubmit={handleSubmit(onSubmit)}>
                             <Form.Group>
                                 <Form.Control
