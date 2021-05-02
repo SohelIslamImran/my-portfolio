@@ -1,5 +1,6 @@
 .about {
   background: #191919;
+  min-height: calc(100vh - 168px);
 }
 
 .about .container {
@@ -12,6 +13,7 @@
 
 .about .container .row h1 {
   font-weight: 600;
+  margin-bottom: 1rem;
   position: relative;
 }
 

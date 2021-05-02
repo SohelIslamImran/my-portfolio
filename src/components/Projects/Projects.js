@@ -3,6 +3,7 @@ import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Button, Card, CardDeck, Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Projects.css';
 
 const Projects = () => {
@@ -117,7 +118,7 @@ const Projects = () => {
                     </Card>
                 </CardDeck>
                 <div className="text-center mt-5">
-                    <Button variant="outline-danger">See More</Button>
+                    <Button as={Link} to="/projects" variant="outline-danger">See More</Button>
                 </div>
             </Container>
         </section>

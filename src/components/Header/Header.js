@@ -3,11 +3,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Button, Col, Container, Image, Row } from 'react-bootstrap';
 import Typewriter from 'typewriter-effect';
+import Particle from '../Particle/Particle';
 import './Header.css';
 
 const Header = () => {
     return (
         <section className="header">
+            <Particle />
             <Container className="d-flex align-items-center">
                 <Row>
                     <Col md={7} xs={12} className="d-flex align-items-center">

@@ -4,6 +4,7 @@ import { Button, Col, Container, Form, Image, Row } from 'react-bootstrap';
 import { useForm } from "react-hook-form";
 import swal from 'sweetalert';
 import './Contact.css';
+import mailSent from './Mail-sent.svg';
 
 const Contact = () => {
     const { register, handleSubmit, reset } = useForm();
@@ -11,7 +12,7 @@ const Contact = () => {
     const onSubmit = data => {
         emailjs.send('gmail', 'portfolio_template', data, 'user_UhuudhC7XpS5QUo7xDWsT')
             .then((res) => {
-               console.log(res.text);
+                console.log(res.text);
                 if (res.text === "OK") {
                     swal("Thank you!", "Your message was sent successfully.", "success");
                     reset();
@@ -57,7 +58,7 @@ const Contact = () => {
                         </Form>
                     </Col>
                     <Col md={6} className="order-1 order-md-2">
-                        <Image src="https://i.ibb.co/gZSpVMC/bewakoof-com-official-205182.jpg" fluid />
+                        <Image src={mailSent} fluid />
                     </Col>
                 </Row>
             </Container>
