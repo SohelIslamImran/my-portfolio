@@ -7,7 +7,7 @@ import './Projects.css';
 
 const Projects = () => {
     return (
-        <div className="projects">
+        <section className="projects">
             <Container>
                 <h2 className="title text-center mb-5">Some of <span>My Projects</span></h2>
                 <CardDeck>
@@ -120,7 +120,7 @@ const Projects = () => {
                     <Button variant="outline-danger">See More</Button>
                 </div>
             </Container>
-        </div>
+        </section>
     );
 };
 

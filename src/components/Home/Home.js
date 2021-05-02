@@ -1,17 +1,17 @@
 import React from 'react';
 import About from '../About/About';
+import Contact from '../Contact/Contact';
 import Header from '../Header/Header';
-import NavBar from '../NavBar/NavBar';
 import Projects from '../Projects/Projects';
 
 const Home = () => {
     return (
-        <div>
-            <NavBar />
+        <main>
             <Header />
             <About />
             <Projects />
-        </div>
+            <Contact />
+        </main>
     );
 };
 

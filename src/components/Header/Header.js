@@ -7,7 +7,7 @@ import './Header.css';
 
 const Header = () => {
     return (
-        <div className="header">
+        <section className="header">
             <Container className="d-flex align-items-center">
                 <Row>
                     <Col md={7} xs={12} className="d-flex align-items-center">
@@ -41,7 +41,7 @@ const Header = () => {
                     </Col>
                 </Row>
             </Container>
-        </div>
+        </section>
     );
 };
 

@@ -14,13 +14,13 @@
   position: relative;
 }
 
-.projects .container .title:before {
+.projects .container .title::before {
   content: "";
   position: absolute;
   bottom: 0;
   top: 40px;
   width: 8rem;
-  height: 3px;
+  height: 2px;
   background: #f9004d;
   border-radius: 20px;
   left: 41.2%;
@@ -49,6 +49,7 @@
 
 .projects .container .card p {
   font-size: 0.8rem;
+  color: #c6c9d8;
   /* text-align: justify; */
 }
 
@@ -58,6 +59,7 @@
 }
 
 .projects .container .card .technology span {
+  color: #c6c9d8;
   background: #282828;
   margin-right: 5px;
   margin-top: 5px;

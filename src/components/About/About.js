@@ -22,7 +22,7 @@ const About = () => {
                                 I am a quick learner. I believe in hard work and efficiency. That's why I always ready to accomplish any task by working hard. I always focus on learning new technology.
                                 My goal is to become A World-Class Professional Web Developer.
                             </p>
-                            <p>Here are a few technologies I've been working with recently :</p>
+                            <p className="p2">Here are a few technologies I've been working with recently :</p>
                             <div className="skills">
                                 <h5>Frontend</h5>
                                 <ul className="d-flex flex-wrap pl-0">

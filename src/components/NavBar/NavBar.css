@@ -3,6 +3,10 @@
   color: white !important;
 }
 
+.navbar .navbar-brand p {
+  vertical-align: middle;
+}
+
 .navbar.sticky {
   background: #191919;
 }

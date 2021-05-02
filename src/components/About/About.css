@@ -12,6 +12,18 @@
 
 .about .container .row h1 {
   font-weight: 600;
+  position: relative;
+}
+
+.about .container .row h1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 8rem;
+  height: 2px;
+  background: #f9004d;
+  border-radius: 20px;
 }
 
 .about .container .row p {
@@ -19,11 +31,11 @@
   text-align: justify;
 }
 
-.about .container .row p:nth-last-child(2) {
+.about .container .row p.p2 {
   position: relative;
 }
 
-.about .container .row p:nth-last-child(2):before {
+.about .container .row p.p2::before {
   content: "";
   position: absolute;
   bottom: 0;
