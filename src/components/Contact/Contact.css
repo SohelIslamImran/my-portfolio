@@ -27,27 +27,27 @@
   transform: translateX(-50%);
 }
 
-.contact-form .container > .row {
+.contact-form .container > div > .row {
   margin-top: 2rem;
 }
 
-.contact-form .container > .row svg {
+.contact-form .container > div > .row svg {
   color: #f9004d;
   font-size: 2.8rem;
   margin-bottom: 0.5rem;
 }
 
-.contact-form .container > .row h6 {
+.contact-form .container > div > .row h6 {
   color: #e4e4e4e8;
   font-size: 1.4rem;
 }
 
-.contact-form .container > .row a {
+.contact-form .container > div > .row a {
   color: #c6c9d8;
   font-size: 0.9rem;
 }
 
-.contact-form .container > .row a:hover {
+.contact-form .container > div > .row a:hover {
   color: #f9004d;
 }
 

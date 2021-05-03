@@ -14,7 +14,7 @@ const Particle = () => {
                             "value": 30,
                             "density": {
                                 "enable": true,
-                                "value_area": 800
+                                "value_area": 500
                             }
                         },
                         "color": {
@@ -66,7 +66,7 @@ const Particle = () => {
                             "enable": true,
                             "speed": 2,
                             "direction": "none",
-                            "random": false,
+                            "random": true,
                             "straight": false,
                             "out_mode": "out",
                             "bounce": false,

@@ -1,7 +1,7 @@
 import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
-import { Button, Image, Nav, Navbar } from 'react-bootstrap';
+import { Button, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './NavBar.css';
 
@@ -23,19 +23,10 @@ const NavBar = () => {
         <Navbar
             collapseOnSelect
             expand="lg"
-            variant="light"
             fixed="top"
-            className={(isSticky || isCollapsed) ? "sticky" : "py-3"}>
-            <Navbar.Brand as={Link} to="/" className="ml-md-3">
-                <Image
-                    src="https://lh3.googleusercontent.com/a-/AOh14GiHJqifi7cnDIb1rrSrukfaa7xLmF_yRWgt0WgkUA=s96-c"
-                    width="35"
-                    height="35"
-                    roundedCircle
-                    className="d-inline-block align-top mr-2"
-                    alt="Profile"
-                />
-                <p className="d-inline-block m-0">Sohel Islam Imran</p>
+            className={(isSticky || isCollapsed) ? "sticky pb-0" : "py-3"}>
+            <Navbar.Brand as={Link} to="/" className="ml-md-3 py-0" onClick={() => window.scrollTo(500, 0)}>
+                <span> &lt; Sohel /&gt; </span>
             </Navbar.Brand>
             <Navbar.Toggle onClick={() => setCollapsed(!isCollapsed)} aria-controls="navbar" />
             <Navbar.Collapse id="navbar">
@@ -52,7 +43,7 @@ const NavBar = () => {
                     <Nav.Link as={Link} to="/blog" className="mr-md-5">Blog</Nav.Link>
                     <Nav.Link as={Link} to="/contact" className="mr-md-5">Contact</Nav.Link>
                     <Nav.Link className="mr-md-5" href="https://drive.google.com/u/0/uc?id=194Bn_iu-ngZgnbHeTz7yHZy9BvmCLh3A&export=download">
-                        <Button variant="outline-danger" size="sm">
+                        <Button variant="danger" size="sm">
                             <FontAwesomeIcon icon={faFileDownload} className="mr-1" /> Resume
                         </Button>
                     </Nav.Link>

@@ -1,10 +1,13 @@
-.navbar-brand,
-.nav-link {
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
+
+.navbar .navbar-brand,
+.navbar .nav-link {
   color: white !important;
 }
 
-.navbar .navbar-brand p {
-  vertical-align: middle;
+.navbar .navbar-brand span {
+  font-family: "Parisienne", cursive;
+  font-size: 2rem;
 }
 
 .navbar.sticky {
