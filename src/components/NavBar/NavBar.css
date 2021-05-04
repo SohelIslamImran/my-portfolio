@@ -27,7 +27,7 @@
   content: "";
   background: #f9004d;
   width: 2.8rem;
-  height: 0.2rem;
+  height: 3px;
   bottom: 8px;
   left: 0;
   right: 0;
@@ -40,12 +40,13 @@
   transition: 0.3s;
 }
 
+.navbar .navbar-nav .nav-link:hover::before,
 .navbar .navbar-nav .nav-link.active::before {
   opacity: 1;
   transform: scaleX(1);
 }
 
-.navbar .navbar-nav .nav-link:hover::before {
-  opacity: 1;
-  transform: scaleX(1);
+.navbar .navbar-nav .nav-link:hover:last-child:before,
+.navbar .navbar-nav .nav-link.active:last-child:before {
+  opacity: 0;
 }

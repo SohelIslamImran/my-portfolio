@@ -12,6 +12,10 @@ import Home from './components/Home/Home';
 import NavBar from "./components/NavBar/NavBar";
 import Projects from "./components/Projects/Projects";
 
+window.onload = (event) => {
+  console.log('page is fully loaded');
+};
+
 function App() {
   return (
     <Router>
@@ -31,7 +35,7 @@ function App() {
           <Projects />
         </Route>
         <Route path="/blog">
-          <Blog/>
+          <Blog />
         </Route>
         <Route path="/contact">
           <Contact />
