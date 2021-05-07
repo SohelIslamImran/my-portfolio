@@ -5,7 +5,7 @@ import { Button, Col, Container, Image, Row } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import Typewriter from 'typewriter-effect';
 import Particle from '../Particle/Particle';
-import headerImg from './Developer.svg';
+import headerImg from '../../images/Developer.svg';
 import './Header.css';
 
 const Header = () => {

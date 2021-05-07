@@ -7,7 +7,7 @@ import { useForm } from "react-hook-form";
 import Fade from 'react-reveal/Fade';
 import swal from 'sweetalert';
 import './Contact.css';
-import mailSent from './Mail-sent.svg';
+import mailSent from '../../images/Mail-sent.svg';
 
 const Contact = () => {
     const { register, handleSubmit, reset } = useForm();

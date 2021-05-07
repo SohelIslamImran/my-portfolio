@@ -6,6 +6,9 @@ import { Button, Card, CardDeck, Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-router-dom';
 import './Projects.css';
+import gerezScreenshort from'../../images/Gerez.png';
+import electroScreenshort from'../../images/Electro.png';
+import eTicketScreenshort from'../../images/E-Ticket.png';
 
 const Projects = () => {
     return (
@@ -16,7 +19,7 @@ const Projects = () => {
                     <CardDeck>
                         <Card>
                             <div className="p-2 pj-img">
-                                <Card.Img variant="top" src="https://i.ibb.co/2Z7G1nc/Gerez.png" />
+                                <Card.Img variant="top" src={gerezScreenshort} />
                             </div>
                             <Card.Body>
                                 <Card.Title>Gerez - Car Repair Services</Card.Title>
@@ -52,7 +55,7 @@ const Projects = () => {
                         </Card>
                         <Card>
                             <div className="p-2 pj-img">
-                                <Card.Img variant="top" src="https://i.ibb.co/X7YFcrx/Electro.png" />
+                                <Card.Img variant="top" src={electroScreenshort} />
                             </div>
                             <Card.Body>
                                 <Card.Title>Electro Shop</Card.Title>
@@ -87,7 +90,7 @@ const Projects = () => {
                         </Card>
                         <Card>
                             <div className="p-2 pj-img">
-                                <Card.Img variant="top" src="https://i.ibb.co/4Z64SSh/E-Ticket.png" />
+                                <Card.Img variant="top" src={eTicketScreenshort} />
                             </div>
                             <Card.Body>
                                 <Card.Title>E-Ticket</Card.Title>
