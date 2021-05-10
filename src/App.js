@@ -19,7 +19,7 @@ function App() {
 
   window.onload = (event) => {
     console.log('page is fully loaded');
-    setTimeout(() => setLoading(false), 3000);
+    setTimeout(() => setLoading(false), 2000);
   };
 
   return (
