@@ -1,8 +1,8 @@
 import React from 'react';
-import About from '../About/About';
-import Contact from '../Contact/Contact';
-import Header from '../Header/Header';
-import Projects from '../Projects/Projects';
+import About from '../../components/About/About';
+import Contact from '../../components/Contact/Contact';
+import Header from '../../components/Header/Header';
+import Projects from '../../components/Projects/Projects';
 
 const Home = () => {
     return (
