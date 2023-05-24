@@ -15,7 +15,6 @@ const Contact = () => {
     const onSubmit = data => {
         emailjs.send('gmail', 'portfolio_template', data, 'user_UhuudhC7XpS5QUo7xDWsT')
             .then((res) => {
-                console.log(res.text);
                 if (res.text === "OK") {
                     swal("Thank you!", "Your message was sent successfully.", "success");
                     reset();
